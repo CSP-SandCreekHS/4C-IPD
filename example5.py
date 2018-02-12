@@ -12,7 +12,7 @@ strategy_description = '''\
 Betray if ever betrayed.
 If I haven't been betrayed yet, I'll betray starting with the 100th round.
 '''
-
+  
 import random
     
 def move(my_history, their_history, my_score, their_score):
