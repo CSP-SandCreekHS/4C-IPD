@@ -5,15 +5,12 @@
 #     strategy_description: a string
 #     move: A function that returns 'c' or 'b'
 ####
-
 team_name = 'E5'
 strategy_name = 'Collude first 100 rounds unless betrayed. Betray 101st round forward.'
 strategy_description = '''\
 Betray if ever betrayed.
 If I haven't been betrayed yet, I'll betray starting with the 100th round.
 '''
-  
-import random
     
 def move(my_history, their_history, my_score, their_score):
     '''Make my move based on the history with this player.
