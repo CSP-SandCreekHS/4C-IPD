@@ -60,7 +60,7 @@ def move(my_history, their_history, my_score, their_score):
         
         return 'c'
     
-    elif random.random() < 0.8:
+    elif random.random() < 0.99:
 
         return 'b'
 
