@@ -16,15 +16,14 @@ def move(my_history, their_history, my_score, their_score):
     elif len(my_history):
         return 'c'
     elif len(my_history):
+    elif len(my_history)==1:
         return 'b'
     elif their_history[-1] == 'c':
+    elif my_history[-1]=='c' and their_history[-1]=='b':
         return 'b'
-    elif their_history[-1] == 'b':
+    else: 
         return 'c'
-    else:
-        return 'c'
-        if len (my_score)==-2000:
-            return 'b'
+  
 
 
     # my_history: a string with one letter (c or b) per round that has been played with this opponent.
