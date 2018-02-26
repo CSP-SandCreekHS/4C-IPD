@@ -27,15 +27,15 @@ def move(my_history, their_history, my_score, their_score):
     # Decide whether to return 'c' or 'b'.
     if len(my_history) == 0 :
         return 'c'
-    elif their_history[-5] == 'c':
+    elif len(my_history) >4 and their_history[-5] == 'c':
         return 'c'
-    elif their_history[-4] == 'b':
+    elif len(my_history) >3 and their_history[-4] == 'b':
         return 'c'
-    elif their_history[-3] == 'b':
+    elif len(my_history) >2 and their_history[-3] == 'b':
         return 'b'
-    elif their_history[-2] == 'c':
+    elif len(my_history) >1 and their_history[-2] == 'c':
         return 'b'
-    elif their_history[-1] == 'b':
+    elif len(my_history) >0 and their_history[-1] == 'b':
         return 'c'
 
     
