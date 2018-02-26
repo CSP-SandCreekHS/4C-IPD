@@ -44,6 +44,7 @@ def move(my_history, their_history, my_score, their_score):
         else: return 'b'
             
     
+
     if len(my_history) <= 0 and len(their_history) <= 0:
 
         return 'b'
@@ -60,6 +61,14 @@ def move(my_history, their_history, my_score, their_score):
     elif my_score >= 300:
         
         return 'c'
+
+    if their_history[-2:]== 'cc':
+        return 'c'   
+    if their_history[-2:]== 'bb':
+        return 'b'
+    if their_history[-4:]== 'cccc':
+        return 'b' 
+
     
     elif random.random() < 0.8:
 

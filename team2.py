@@ -6,11 +6,13 @@
 #     move: A function that returns 'c' or 'b'
 ####
 
+
 import random
 
 team_name = 'TeamRabbit' # Only 10 chars displayed.
 strategy_name = 'Betray based on points and random'
 strategy_description = 'If my points are between -250 and 300 choose random.  If < -250 then betray.  If > 300 collude.'
+
 
 def move(my_history, their_history, my_score, their_score):
     ''' Arguments accepted: my_history, their_history are strings.
